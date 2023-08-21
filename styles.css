@@ -1,0 +1,87 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: antiquewhite;
+    border: 1px solid transparent; 
+}
+
+.todo-list{
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto 20px;
+    background: rgb(255, 255, 255);
+    padding:70px 20px 50px;
+}
+.todo-list h2{
+text-align: center;
+font-size: 35px;
+font-weight: 100;
+}
+
+.list-container {
+    list-style-type: none;
+    margin:50px 100px 0px;
+    width: 450px;
+    word-break:break-word;
+    user-select: none; 
+}
+
+.add{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+ul li{
+    font-size:30px;
+    font-weight: 1px;
+    cursor: pointer;
+}
+ul li::before{
+    content: "";
+    display: inline-block; 
+    width: 28px; 
+    height: 28px; 
+    background-image: url(images/64571.png);
+    background-size: cover; 
+    margin-right: 10px; 
+    cursor: pointer;
+}
+
+ul li.checked{
+    color:rgba(61, 61, 61, 0.639);
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+ul li.checked::before{
+    content: "";
+    display: inline-block;
+    width: 28px; 
+    height: 28px; 
+    background-image: url(images/checked_checkbox.png);
+    background-size: cover;
+    margin-right: 10px; 
+    cursor: pointer;
+}
+
+.clear {
+    margin-top: 50px;
+}
+.icon-x {
+    position: absolute;
+    right: 700px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(images/thin-letter-x-black-png-7.png);
+    background-size: cover;
+    vertical-align: middle; 
+    margin-right: 5px; 
+}
