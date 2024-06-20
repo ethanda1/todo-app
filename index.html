@@ -2,23 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>todo list</title>
+    <title>Todo List</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <div class = "container">
-        <div class = "todo-list">
+    <div class="container">
+        <div class="todo-list">
             <h2>TO DO LIST</h2>
-            <div class = "add">
-                <input class = "input" placeholder="to-do">
-                <button onclick = "addTodo()" class = "button">add</button>
+            <div class="add">
+                <input class="input" placeholder="to-do task">
+                <input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+                <button onclick="addTodo()" class="button">add</button>
             </div>
-            <ul class = "list-container">
+            <ul class="list-container">
             </ul>
-        <button class = 'clear' onclick="clearList()">clear</button>
+            <button class="clear" onclick="clearList()">clear</button>
         </div>
-        
     </div>
-    <script src = "scripts.js"></script>
-</body>
+    <script src="scripts.js"></script>
+  </body>
 </html>
